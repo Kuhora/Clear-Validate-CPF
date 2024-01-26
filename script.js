@@ -1,4 +1,4 @@
-const cpfs = document.querySelectorAll('.cpf li');
+const cpfsList = document.querySelectorAll('.cpf li');
 
 
 const elementInnerText = ([...elements]) => {
@@ -14,8 +14,18 @@ const buildCPF = (cpf) => {
   return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '$1.$2.$3-$4');
 }
 
-console.log(clearCPF('121.121.222 33'));
-console.log(buildCPF('12112122233'));
-console.log(elementInnerText(cpfs));
+const formatCPFS = (cpfs) => {
+  return cpfs.map(clearCPF).map(buildCPF);
+}
 
+const replaceCPFS = (cpfsElements) => {
+  const cpfs = elementInnerText(cpfsElements);
+  const cpfsFormatted = formatCPFS(cpfs);
+
+  cpfsElements.forEach((element, index) => {
+    element.innerText = cpfsFormatted[index];
+  });
+}
+
+replaceCPFS(cpfsList)
 
