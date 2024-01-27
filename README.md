@@ -8,10 +8,8 @@ I did a mini exercise to practice regex in validating personal identifications; 
 
  ### 🖥️ Layout ###
  
-![Screenshot_3](https://github.com/Kuhora/Clear-Validate-CPF/assets/105829768/d1305721-e735-42ec-9865-8e088bf764c6)
-
-![Screenshot_2](https://github.com/Kuhora/Clear-Validate-CPF/assets/105829768/2408b7a3-4f6b-4675-9f8e-a465fb2be053)
-
+![Screenshot_2](https://github.com/Kuhora/Clear-Validate-CPF/assets/105829768/7d383438-fd6c-4e14-8372-297508910039)
+![Screenshot_4](https://github.com/Kuhora/Clear-Validate-CPF/assets/105829768/fb290e16-d40d-4ebc-95dc-d3b01437298b)
 
 
 ---
