@@ -9,8 +9,8 @@ export default class ValidateCpf {
     return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g, '$1.$2.$3-$4');
   }
   format(cpf) {
-    const cpfClear = this.limpar(cpf);
-    return this.construir(cpfClear);
+    const cpfClear = this.clear(cpf);
+    return this.construct(cpfClear);
   }
   validate(cpf) {
     const matchCpf = cpf.match(/(?:\d{3}[-.\s]?){3}\d{2}/g);
